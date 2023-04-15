@@ -3,5 +3,5 @@
 <h2>Funcionalidades</h2>
 <p>Atualmente, o bot possui as seguintes funcionalidades:</p>
 <ul>
-<li>Comando <code>!hello</code>: o bot responde com uma saudação.</li>
+<li>Comando <code>/ping</code>: o bot responde: Pong!.</li>
 </ul>
