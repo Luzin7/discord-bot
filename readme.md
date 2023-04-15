@@ -1,14 +1,7 @@
-├── examples -> short, feature-specific sample apps
-│ ├── app.js -> finished app.js code
-│ ├── button.js
-│ ├── command.js
-│ ├── modal.js
-│ ├── selectMenu.js
-├── .env.sample -> sample .env file
-├── app.js -> main entrypoint for app
-├── commands.js -> slash command payloads + helpers
-├── game.js -> logic specific to RPS
-├── utils.js -> utility functions and enums
-├── package.json
-├── README.md
-└── .gitignore
+<h1>Bot para Discord</h1>
+<p>Este é um projeto pessoal de estudo para a criação de um bot para Discord. O objetivo do projeto é aprender mais sobre a criação de bots para Discord, bem como melhorar minhas habilidades em programação.</p>
+<h2>Funcionalidades</h2>
+<p>Atualmente, o bot possui as seguintes funcionalidades:</p>
+<ul>
+<li>Comando <code>!hello</code>: o bot responde com uma saudação.</li>
+</ul>
