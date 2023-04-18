@@ -3,5 +3,5 @@
 <h2>Funcionalidades</h2>
 <p>Atualmente, o bot possui as seguintes funcionalidades:</p>
 <ul>
-<li>Comando <code>/ping</code>: o bot responde: Pong!</li>
+<li>O comando <code>/ping</code>: o bot responde: Pong!</li>
 </ul>
