@@ -4,7 +4,14 @@ const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const { DISCORD_TOKEN } = process.env;
+const {
+	DISCORD_TOKEN,
+	TWITTER_API_KEY,
+	TWITTER_API_KEY_SECRET,
+	TWITTER_ACCESS_TOKEN,
+	TWITTER_ACCESS_TOKEN_SECRET,
+	TWITTER_RAPHAEL_USER,
+} = process.env;
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -60,6 +67,32 @@ client.on(Events.InteractionCreate, async (interaction) => {
 		}
 	}
 });
+
+// const Twit = require('twit');
+// const Discord = require('discord.js');
+// const cliente = new Discord.WebhookClient({
+// 	id: '1097697190144651274',
+// 	token: '036cEDgnunEUGDfWzYOsHrtd3DSK-7kGE1n1xT6C9KDM5Z3j5S6qZlplTRoNVC9FNOJ3',
+// });
+
+// const T = new Twit({
+// 	consumer_key: TWITTER_API_KEY,
+// 	consumer_secret: TWITTER_API_KEY_SECRET,
+// 	access_token: TWITTER_ACCESS_TOKEN,
+// 	access_token_secret: TWITTER_ACCESS_TOKEN_SECRET,
+// });
+
+// T.get(
+// 	'statuses/user_timeline',
+// 	{ screen_name: 'Sr4m', count: 10 },
+// 	(err, data, response) => {
+// 		if (err) {
+// 			console.log('Erro:', err);
+// 		} else {
+// 			console.log('Tweets:', data);
+// 		}
+// 	},
+// );
 
 client.once(Events.ClientReady, (c) => {
 	console.log(`Runfando ${c.user.tag}`);
