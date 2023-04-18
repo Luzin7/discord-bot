@@ -32,7 +32,9 @@ const rest = new REST().setToken(DISCORD_TOKEN);
 
 (async () => {
 	try {
-		console.log(`Atualizando os ${commands.length} comandos slash `);
+		console.log(
+			`Atualizando e adicionando os ${commands.length} comandos no servidor`,
+		);
 
 		await rest.put(Routes.applicationGuildCommands(CLIENT_ID, SERVER_ID), {
 			body: commands,
